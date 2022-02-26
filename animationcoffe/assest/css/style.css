@@ -79,7 +79,7 @@ body {
     top: 40px;
     width: 10rem;
     height: 11.25rem;
-    border: 25px solid #000;
+    border: 25px solid rgb(219 219 219);
     border-left: 25px solid transparent;
     border-bottom: 25px solid transparent;
     border-radius: 50%;
