@@ -20,7 +20,7 @@ body {
 
 /* ----cup style------ */
 
-.cup {
+.container .cup {
     position: relative;
     width: 17.5rem;
     height: 18.75rem;
@@ -29,7 +29,7 @@ body {
     border-bottom-right-radius: 45%;
 }
 
-.top {
+.container .cup .top {
     position: absolute;
     top: -30px;
     left: 0;
@@ -43,7 +43,7 @@ body {
     -o-border-radius: 50%;
 }
 
-.circle {
+.container .cup .top .circle {
     position: absolute;
     top: 5px;
     left: 10px;
@@ -59,7 +59,7 @@ body {
     overflow: hidden;
 }
 
-.tea {
+.container .cup .top .circle .tea {
     position: absolute;
     top: 20px;
     left: 0;
@@ -73,7 +73,7 @@ body {
     -o-border-radius: 50%;
 }
 
-.handle {
+.container .cup .handle {
     position: absolute;
     right: -70px;
     top: 40px;
@@ -94,7 +94,7 @@ body {
     -o-transform: rotate(42deg);
 }
 
-.plate {
+.container .plate {
     position: absolute;
     bottom: -50px;
     left: 50%;
@@ -114,7 +114,7 @@ body {
     box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
 }
 
-.plate::before {
+.container .plate::before {
     content: '';
     position: absolute;
     top: 10px;
@@ -130,14 +130,14 @@ body {
     border-radius: 50%;
 }
 
-.vapour {
+.container .cup .top .vapour {
     position: relative;
     display: flex;
     z-index: 1;
     padding: 0 20px;
 }
 
-.vapour span {
+.container .cup .top .vapour span {
     position: relative;
     bottom: 50px;
     display: block;
