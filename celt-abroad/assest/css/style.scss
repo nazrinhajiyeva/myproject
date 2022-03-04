@@ -1,0 +1,155 @@
+        @import "_variable.scss";
+        @import "_reset.scss";
+        .section-header {
+            background-image: url(/assest/image/header.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            .container-fluid {
+                header {
+                    .nav-body {
+                        max-width: 25rem;
+                        margin-top: 17rem;
+                        padding-left: 2rem;
+                    }
+                    .social-icons {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: end;
+                        align-items: end;
+                        i {
+                            color: white;
+                            margin-top: 0.5rem;
+                        }
+                    }
+                    .top-nav {
+                        background: transparent;
+                        .navbar {
+                            .collapse {
+                                .navbar-nav {
+                                    .nav-item {
+                                        &:hover {
+                                            background-color: yellow;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bottom-nav {
+                        display: flex;
+                        justify-content: end;
+                        align-items: end;
+                        .d-flex {
+                            .form-select {
+                                background: white;
+                                border: none;
+                                width: 5%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .row {
+            .col-md-3 {
+                .card-1 {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 0;
+                    height: 17rem;
+                    word-wrap: break-word;
+                    background-clip: border-box;
+                    border-radius: 0.25rem;
+                    background-image: url('/assest/image/image\ 10.png');
+                    background-size: cover;
+                }
+                .country-button {
+                    margin-left: 2rem;
+                    margin-top: auto;
+                    margin-bottom: 2rem;
+                }
+                .card-2 {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 0;
+                    height: 17rem;
+                    word-wrap: break-word;
+                    background-clip: border-box;
+                    border-radius: 0.25rem;
+                    background-image: url('/assest/image/image\ 11.png');
+                    background-size: cover;
+                }
+                .card-3 {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 0;
+                    height: 17rem;
+                    word-wrap: break-word;
+                    background-clip: border-box;
+                    border-radius: 0.25rem;
+                    background-image: url('/assest/image/image\ 12.png');
+                    background-size: cover;
+                }
+                .card-4 {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 0;
+                    height: 17rem;
+                    word-wrap: break-word;
+                    background-clip: border-box;
+                    border-radius: 0.25rem;
+                    background-image: url('/assest/image/image\ 13.png');
+                    background-size: cover;
+                }
+            }
+            .col {
+                .card-browse-by-discipline {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 2rem;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+                    border-radius: 1.4rem;
+                    -webkit-border-radius: 1.4rem;
+                    -moz-border-radius: 1.4rem;
+                    -ms-border-radius: 1.4rem;
+                    -o-border-radius: 1.4rem;
+                }
+                .card-icon {
+                    display: inline-block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+        
+        footer {
+            background: #313237;
+            height: 14rem;
+            .content {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 2rem;
+                h2 {
+                    color: white;
+                }
+                li {
+                    color: white;
+                    list-style: none;
+                    text-align: center;
+                }
+            }
+            h3 {
+                font-size: 0.8rem;
+                color: white;
+            }
+        }
