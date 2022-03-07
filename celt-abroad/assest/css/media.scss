@@ -1,0 +1,31 @@
+@media screen and (max-width:800px) {
+    .res-column {
+        flex-direction: column;
+    }
+    .top-schools .row .col-md-3 {
+        width: 100%;
+    }
+    .browse {
+        .col-md-3 {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .justify-content-center-800 {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .text-align-center {
+        text-align: center;
+    }
+    .all-link {
+        border-bottom: 0.01px solid rgb(206, 204, 204);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        a {
+            justify-content: center !important;
+        }
+    }
+}

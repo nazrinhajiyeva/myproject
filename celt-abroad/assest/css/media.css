@@ -1,0 +1,39 @@
+@media screen and (max-width: 800px) {
+  .res-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top-schools .row .col-md-3 {
+    width: 100%;
+  }
+  .browse .col-md-3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .justify-content-center-800 {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .text-align-center {
+    text-align: center;
+  }
+  .all-link {
+    border-bottom: 0.01px solid #cecccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .all-link a {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -1,8 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+  .res-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top-schools .row .col-md-3 {
+    width: 100%;
+  }
+  .browse .col-md-3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .justify-content-center-800 {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .text-align-center {
+    text-align: center;
+  }
+  .all-link {
+    border-bottom: 0.01px solid #cecccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .all-link a {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
 }
 
 .section-header {
@@ -14,13 +54,51 @@
   height: 100vh;
 }
 
-.section-header .container-fluid header .nav-body {
-  max-width: 25rem;
-  margin-top: 17rem;
+.section-header .shadow {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-header .shadow .container-fluid header .nav-body {
+  max-width: 27.5rem;
+  margin-top: 13rem;
   padding-left: 2rem;
 }
 
-.section-header .container-fluid header .social-icons {
+.section-header .shadow .container-fluid header .nav-body h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: "Mulish";
+  color: white;
+}
+
+.section-header .shadow .container-fluid header .nav-body p {
+  font-family: "Mulish";
+  color: white;
+  font-size: 1.5rem;
+}
+
+.section-header .shadow .container-fluid header .nav-body button {
+  border: 2px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: white;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-family: "Mulish";
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+.section-header .shadow .container-fluid header .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,20 +114,51 @@
           align-items: end;
 }
 
-.section-header .container-fluid header .social-icons i {
+.section-header .shadow .container-fluid header .social-icons i {
   color: white;
   margin-top: 0.5rem;
 }
 
-.section-header .container-fluid header .top-nav {
+.section-header .shadow .container-fluid header .top-nav {
   background: transparent;
 }
 
-.section-header .container-fluid header .top-nav .navbar .collapse .navbar-nav .nav-item:hover {
-  background-color: yellow;
+.section-header .shadow .container-fluid header .top-nav .navbar .navbar-brand {
+  color: white;
+  font-family: "Mulish";
+  font-weight: 900;
+  font-size: 2.3rem;
+  padding-left: 3rem;
+  padding-top: 1.5rem;
 }
 
-.section-header .container-fluid header .bottom-nav {
+.section-header .shadow .container-fluid header .top-nav .navbar .collapse .navbar-nav .nav-item {
+  position: relative;
+  padding: 0.5rem 3rem;
+  border-bottom: 0.5px solid gray;
+}
+
+.section-header .shadow .container-fluid header .top-nav .navbar .collapse .navbar-nav .nav-item .nav-link1 {
+  font-size: 1.13rem;
+  font-family: "Mulish";
+  color: white;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.section-header .shadow .container-fluid header .top-nav .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 2px solid #EE7100;
+  transition: translateY -6px;
+  -webkit-transition: translateY -6px;
+  -moz-transition: translateY -6px;
+  -ms-transition: translateY -6px;
+  -o-transition: translateY -6px;
+}
+
+.section-header .shadow .container-fluid header .bottom-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,13 +170,120 @@
           align-items: end;
 }
 
-.section-header .container-fluid header .bottom-nav .d-flex .form-select {
-  background: white;
-  border: none;
-  width: 5%;
+.section-header .shadow .container-fluid header .bottom-nav .d-flex i {
+  color: white;
 }
 
-.row .col-md-3 .card-1 {
+.section-header .shadow .container-fluid header .bottom-nav .d-flex .glass {
+  position: relative;
+}
+
+.section-header .shadow .container-fluid header .bottom-nav .d-flex .glass .fa-magnifying-glass {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.1rem;
+}
+
+.section-header .shadow .container-fluid header .bottom-nav .d-flex .glass input {
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.section-header .shadow .container-fluid header .bottom-nav .d-flex .form-select {
+  border: none;
+  width: 95%;
+}
+
+.container .section-title h1 {
+  color: #1E398F;
+  font-weight: 800;
+  font-size: 2.2rem;
+  font-family: "Mulish";
+}
+
+.container .section-title p {
+  font-size: 1.4rem;
+}
+
+.container .top-schools h2 {
+  font-weight: 900;
+  color: #979797;
+  font-size: 1.6rem;
+  font-family: "Mulish";
+  font-style: italic;
+}
+
+.container .top-schools .top-schools-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.container .top-schools .top-schools-grid .card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 19rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 9px rgba(69, 69, 69, 0.23);
+          box-shadow: 0px 0px 9px rgba(69, 69, 69, 0.23);
+  border-radius: 6px;
+  border: none;
+  margin-top: 1.5rem;
+}
+
+.container .top-schools .top-schools-grid .card img {
+  height: 10.3rem;
+}
+
+.container .top-schools .top-schools-grid .card .card-body h3 {
+  font-weight: 800;
+  font-family: "Mulish";
+  font-size: 1.2rem;
+  color: #EE7100;
+  text-align: center;
+}
+
+.container .top-schools .top-schools-grid .card .card-body p {
+  font-size: 1.06rem;
+  font-family: "Mulish";
+  text-align: center;
+}
+
+.container .top-schools .top-schools-grid .card .card-body i {
+  color: #B8B8B8;
+  font-size: 1.1rem;
+}
+
+.all-link a {
+  text-decoration: none;
+  color: #979797;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-family: "Mulish";
+}
+
+.country-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.country-grid .card-1 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,8 +292,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 0;
+  width: 18rem;
   height: 17rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: 0.25rem;
@@ -85,23 +304,39 @@
   background-size: cover;
 }
 
-.row .col-md-3 .country-button {
+.country-grid .country-button {
   margin-left: 2rem;
   margin-top: auto;
   margin-bottom: 2rem;
 }
 
-.row .col-md-3 .card-2 {
+.country-grid .country-button button {
+  padding: 0.2rem 1.5rem;
+  background: #EE7100;
+  border: none;
+  font-size: 1.12rem;
+  color: white;
+  font-weight: 500;
+  font-family: "Mulish";
+  -webkit-box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+          box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+.country-grid .card-2 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-width: 0;
+  width: 18rem;
   height: 17rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: 0.25rem;
@@ -109,7 +344,7 @@
   background-size: cover;
 }
 
-.row .col-md-3 .card-3 {
+.country-grid .card-3 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,8 +353,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 0;
+  width: 18rem;
   height: 17rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: 0.25rem;
@@ -127,7 +365,7 @@
   background-size: cover;
 }
 
-.row .col-md-3 .card-4 {
+.country-grid .card-4 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,8 +374,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 0;
+  width: 18rem;
   height: 17rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: 0.25rem;
@@ -145,7 +386,18 @@
   background-size: cover;
 }
 
-.row .col .card-browse-by-discipline {
+.browse-by-discipline-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(14rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.browse-by-discipline-grid .card-browse-by-discipline {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,6 +406,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 13rem;
+  height: 12rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2rem;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
@@ -165,15 +421,56 @@
   -o-border-radius: 1.4rem;
 }
 
-.row .col .card-icon {
+.browse-by-discipline-grid .card-icon {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+  height: 7.6rem;
+}
+
+.owl-carousel .item {
+  width: 22rem;
+}
+
+.owl-carousel .item .card {
+  margin-right: 1rem;
+  width: 70%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.owl-carousel .item .card img {
+  height: 11rem;
+}
+
+.owl-carousel .item .card .card-body h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Mulish";
+  color: #EE7100;
+}
+
+.owl-carousel .item .card .card-body p {
+  font-weight: 400;
+  font-size: 1.12rem;
+  font-family: "Mulish";
+  text-align: center;
+}
+
+.owl-carousel .item .card .card-body i {
+  color: #B8B8B8;
 }
 
 footer {
   background: #313237;
-  height: 14rem;
+  height: auto;
 }
 
 footer .content {
@@ -190,14 +487,42 @@ footer .content h2 {
   color: white;
 }
 
-footer .content li {
+footer .content li a {
   color: white;
-  list-style: none;
+  text-decoration: none;
   text-align: center;
+  margin-right: 3rem;
 }
 
 footer h3 {
   font-size: 0.8rem;
   color: white;
+  margin-top: 5rem;
+}
+
+footer .input-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  max-width: 17rem;
+}
+
+footer .input-btn .subscribe-btn {
+  background: #EE7100;
+  border-radius: 6px;
+  padding: 0.3rem 0.8rem;
+}
+
+footer .input-btn input {
+  outline: none;
+  background: transparent;
+  border: 0.5px solid #979797;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
