@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #71b7e6, #83449c);
+    header {
+        color: #623275;
+    }
+    .wrapper {
+        margin: 10rem auto;
+        max-width: 25rem;
+        width: 100%;
+        background: #fff;
+        border-radius: 0.3rem;
+        -webkit-border-radius: 0.3rem;
+        -moz-border-radius: 0.3rem;
+        -ms-border-radius: 0.3rem;
+        -o-border-radius: 0.3rem;
+        padding: 1.6rem;
+        header {
+            font-size: 1.9rem;
+            font-weight: 600;
+        }
+        .inputField {
+            display: flex;
+            height: 2.8rem;
+            width: 100%;
+            margin-top: 1.5rem;
+            input {
+                width: 85%;
+                height: 100%;
+                border: 1px solid #ccc;
+                font-size: 1.06rem;
+                padding-left: 0.9rem;
+                outline: none;
+            }
+            button {
+                width: 3.75rem;
+                height: 100%;
+                border: none;
+                outline: none;
+                background: #8e49e8;
+                color: #fff;
+                font-size: 1.4rem;
+                cursor: pointer;
+                border-radius: 0.19rem;
+                -webkit-border-radius: 0.19rem;
+                -moz-border-radius: 0.19rem;
+                -ms-border-radius: 0.19rem;
+                -o-border-radius: 0.19rem;
+                margin-left: 0.3rem;
+                opacity: 0.6;
+                pointer-events: none;
+                &.active {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }
+        }
+        .todoList {
+            max-height: 15.6rem;
+            overflow-y: auto;
+            li {
+                list-style: none;
+                height: 2.8rem;
+                line-height: 2.8rem;
+                position: relative;
+                background: #f2f2f2;
+                border-radius: 0.19rem;
+                -webkit-border-radius: 0.19rem;
+                -moz-border-radius: 0.19rem;
+                -ms-border-radius: 0.19rem;
+                -o-border-radius: 0.19rem;
+                margin-top: 1.5rem;
+                margin-bottom: 0.5rem;
+                padding: 0 0.9rem;
+                cursor: default;
+                overflow: hidden;
+                &:hover span {
+                    right: 0rem;
+                }
+                span {
+                    position: absolute;
+                    right: -5rem;
+                    color: #fff;
+                    width: 5rem;
+                    text-align: center;
+                    background: #e74c3c;
+                    border-radius: 0 0.19rem 0.19rem 0;
+                    -webkit-border-radius: 0 0.19rem 0.19rem 0;
+                    -moz-border-radius: 0 0.19rem 0.19rem 0;
+                    -ms-border-radius: 0 0.19rem 0.19rem 0;
+                    -o-border-radius: 0 0.19rem 0.19rem 0;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    -webkit-transition: all 0.3s ease;
+                    -moz-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+    .footer {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 1.25rem;
+        justify-content: space-between;
+        button {
+            border: none;
+            outline: none;
+            background: #8e49e8;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 0.19rem;
+            -webkit-border-radius: 0.19rem;
+            -moz-border-radius: 0.19rem;
+            -ms-border-radius: 0.19rem;
+            -o-border-radius: 0.19rem;
+            margin-left: 0.3rem;
+            padding: 0.4rem 0.6rem;
+            opacity: 0.6;
+            pointer-events: none;
+            &.active {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+}
