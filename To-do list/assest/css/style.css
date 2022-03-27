@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+ul {
+  padding-left: 0rem !important;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -19,6 +23,7 @@ body .wrapper {
   max-width: 25rem;
   width: 100%;
   background: #fff;
+  border: 2px solid #623275;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
